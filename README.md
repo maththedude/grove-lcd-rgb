@@ -216,7 +216,6 @@ The driver should auto-detect v5 hardware. If colors don't work:
 
 - Check the [examples](examples/) directory
 - Read the [API documentation](https://docs.rs/grove-lcd-rgb)
-- Open an issue on [GitHub](https://github.com/maththedude/grove-lcd-rgb/issues)
 
 ## Using in Your Project
 
@@ -252,3 +251,8 @@ at your option.
 ## Credits
 
 Based on the [Seeed Studio Grove LCD RGB Backlight Arduino library](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight).
+
+## AI Useage
+
+Publicly avalible large-language models were used in the production of this library. The rights of the models' trainers to use the training data they did cannot be verified.
+If this violates the laws, organizational standards, or moral standards that bind you, please refrain from using any of this code.

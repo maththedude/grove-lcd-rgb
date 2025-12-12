@@ -1,6 +1,6 @@
 [package]
 name = "grove-lcd-rgb"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Matthew Pugh"]
 license = "MIT OR Apache-2.0"
@@ -9,14 +9,13 @@ repository = "https://github.com/maththedude/grove-lcd-rgb"
 readme = "README.md"
 keywords = ["embedded", "lcd", "grove", "embedded-hal-driver", "no-std"]
 categories = ["embedded", "hardware-support", "no-std"]
-#TODO documentation = "https://docs.rs/grove-lcd-rgb"
+documentation = "https://docs.rs/grove-lcd-rgb"
 
 [dependencies]
 embedded-hal = "1.0"
 
 [dev-dependencies]
 # For examples only - not required by library users
-# Match versions exactly with working thermostat
 esp-hal = { version = "1.0.0", features = ["defmt", "esp32c6", "unstable"] }
 esp-rtos = { version = "0.2.0", features = ["defmt", "esp-alloc", "esp32c6"] }
 defmt = "1.0.1"
