@@ -42,9 +42,11 @@ const LCD_DISPLAYCONTROL: u8 = 0x08;
 const LCD_CURSORSHIFT: u8 = 0x10;
 const LCD_FUNCTIONSET: u8 = 0x20;
 const LCD_SETCGRAMADDR: u8 = 0x40;
+#[allow(dead_code)]
 const LCD_SETDDRAMADDR: u8 = 0x80;
 
 // Entry Mode flags
+#[allow(dead_code)]
 const LCD_ENTRYRIGHT: u8 = 0x00;
 const LCD_ENTRYLEFT: u8 = 0x02;
 const LCD_ENTRYSHIFTINCREMENT: u8 = 0x01;
@@ -52,6 +54,7 @@ const LCD_ENTRYSHIFTDECREMENT: u8 = 0x00;
 
 // Display Control flags
 const LCD_DISPLAYON: u8 = 0x04;
+#[allow(dead_code)]
 const LCD_DISPLAYOFF: u8 = 0x00;
 const LCD_CURSORON: u8 = 0x02;
 const LCD_CURSOROFF: u8 = 0x00;
@@ -60,17 +63,22 @@ const LCD_BLINKOFF: u8 = 0x00;
 
 // Cursor Shift flags
 const LCD_DISPLAYMOVE: u8 = 0x08;
+#[allow(dead_code)]
 const LCD_CURSORMOVE: u8 = 0x00;
 const LCD_MOVERIGHT: u8 = 0x04;
 const LCD_MOVELEFT: u8 = 0x00;
 
 // Function Set flags
+#[allow(dead_code)]
 const LCD_8BITMODE: u8 = 0x10;
+#[allow(dead_code)]
 const LCD_4BITMODE: u8 = 0x00;
 const LCD_2LINE: u8 = 0x08;
+#[allow(dead_code)]
 const LCD_1LINE: u8 = 0x00;
-const LCD_5x10DOTS: u8 = 0x04;
-const LCD_5x8DOTS: u8 = 0x00;
+const LCD_5X10_DOTS: u8 = 0x04;
+#[allow(dead_code)]
+const LCD_5X8_DOTS: u8 = 0x00;
 
 // RGB Registers
 const REG_MODE1: u8 = 0x00;
@@ -168,7 +176,7 @@ where
 
         // For some 1-line displays you can select a 10-pixel high font
         if matches!(dotsize, DotSize::Dots5x10) && lines == 1 {
-            self.display_function |= LCD_5x10DOTS;
+            self.display_function |= LCD_5X10_DOTS;
         }
 
         // Wait for LCD to power up - increased for reliability
