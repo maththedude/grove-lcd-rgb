@@ -2,14 +2,14 @@
 name = "grove-lcd-rgb"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Matthew Pugh"]
 license = "MIT OR Apache-2.0"
 description = "Platform-agnostic driver for Grove LCD RGB Backlight using embedded-hal, with full support for v4 and v5 hardware"
-repository = "https://github.com/yourusername/grove-lcd-rgb"
-documentation = "https://docs.rs/grove-lcd-rgb"
+repository = "https://github.com/maththedude/grove-lcd-rgb"
 readme = "README.md"
 keywords = ["embedded", "lcd", "grove", "embedded-hal-driver", "no-std"]
 categories = ["embedded", "hardware-support", "no-std"]
+#TODO documentation = "https://docs.rs/grove-lcd-rgb"
 
 [dependencies]
 embedded-hal = "1.0"

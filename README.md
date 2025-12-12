@@ -13,7 +13,7 @@ A platform-agnostic Rust driver for the Grove LCD RGB Backlight display using `e
 - ✅ Custom character support (up to 8 custom chars)
 - ✅ Display scrolling and text direction control
 - ✅ Cursor visibility and blink control
-- ✅ **Automatic v4/v5 hardware detection**
+- ✅ Automatic v4/v5 hardware detection
 - ✅ Platform-agnostic using `embedded-hal` 1.0
 - ✅ `no_std` compatible
 - ✅ Comprehensive examples for ESP32-C6
